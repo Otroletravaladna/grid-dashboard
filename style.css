@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+aside {
+    grid-column: 1 / 2;
+    display: grid;
+    height: 50%;
+}
+
+aside > div > ul > li {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+main {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template: 1fr 6fr / 3fr 1fr;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+.articles {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+}
+
+.right {
+    grid-column: 2 / 3;
+}
+
+div{
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+}
